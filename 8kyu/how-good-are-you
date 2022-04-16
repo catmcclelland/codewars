@@ -1,0 +1,10 @@
+function betterThanAverage(classPoints, yourPoints) {
+  let sum = yourPoints;
+   classPoints.forEach(point => sum += point);
+  const avg = sum/(classPoints.length+1);
+  if(yourPoints > avg){
+    return true
+  } else {
+    return false
+  }
+}

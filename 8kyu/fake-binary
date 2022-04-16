@@ -1,0 +1,12 @@
+function fakeBin(x){
+  const newArr = [];
+const arr = x.split("");
+  arr.map(num => {
+    if (num<5){
+      newArr.push(0)
+    } else{
+      newArr.push(1)
+    }
+  })
+  return newArr.join("")
+}
